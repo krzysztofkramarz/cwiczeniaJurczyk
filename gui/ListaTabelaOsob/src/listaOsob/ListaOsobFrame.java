@@ -57,15 +57,15 @@ public class ListaOsobFrame extends javax.swing.JFrame {
         setTitle("Lista i Tabela Osób");
 
         poleImie.setColumns(8);
-        poleImie.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Imię", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 12), new java.awt.Color(51, 0, 255))); // NOI18N
+        poleImie.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Imię", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 11), new java.awt.Color(51, 0, 255))); // NOI18N
         jPanel1.add(poleImie);
 
         poleNazwisko.setColumns(8);
-        poleNazwisko.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Nazwisko", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 12), new java.awt.Color(51, 0, 255))); // NOI18N
+        poleNazwisko.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Nazwisko", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 11), new java.awt.Color(51, 0, 255))); // NOI18N
         jPanel1.add(poleNazwisko);
 
         spinnerRok.setModel(new javax.swing.SpinnerNumberModel(2000, 1900, null, 1));
-        spinnerRok.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Rok ur.", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 12), new java.awt.Color(51, 0, 204))); // NOI18N
+        spinnerRok.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Rok ur.", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 11), new java.awt.Color(51, 0, 204))); // NOI18N
         jPanel1.add(spinnerRok);
 
         przyciskDodaj.setText("dodaj");
@@ -88,7 +88,7 @@ public class ListaOsobFrame extends javax.swing.JFrame {
 
         jPanel2.setLayout(new javax.swing.BoxLayout(jPanel2, javax.swing.BoxLayout.LINE_AXIS));
 
-        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Lista", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 12), new java.awt.Color(102, 0, 255))); // NOI18N
+        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Lista", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 11), new java.awt.Color(102, 0, 255))); // NOI18N
         jPanel3.setLayout(new java.awt.BorderLayout());
 
         jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder("menu"));
@@ -102,6 +102,11 @@ public class ListaOsobFrame extends javax.swing.JFrame {
         jPanel4.add(przyciskWypiszLista);
 
         przyciskUsunLista.setText("usuń");
+        przyciskUsunLista.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                przyciskUsunListaActionPerformed(evt);
+            }
+        });
         jPanel4.add(przyciskUsunLista);
 
         przyciskWyczyscLista.setText("wyczyść");
@@ -118,7 +123,7 @@ public class ListaOsobFrame extends javax.swing.JFrame {
 
         jPanel2.add(jPanel3);
 
-        jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Tabela", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 12), new java.awt.Color(102, 0, 255))); // NOI18N
+        jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Tabela", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 11), new java.awt.Color(102, 0, 255))); // NOI18N
         jPanel5.setLayout(new java.awt.BorderLayout());
 
         jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder("menu"));
@@ -247,6 +252,10 @@ public class ListaOsobFrame extends javax.swing.JFrame {
     private void przyciskIWyczyscTabelaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_przyciskIWyczyscTabelaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_przyciskIWyczyscTabelaActionPerformed
+
+    private void przyciskUsunListaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_przyciskUsunListaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_przyciskUsunListaActionPerformed
 
     /**
      * @param args the command line arguments

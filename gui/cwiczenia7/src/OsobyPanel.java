@@ -313,7 +313,9 @@ public class OsobyPanel extends javax.swing.JFrame {
     }//GEN-LAST:event_buttonWypiszLista1ActionPerformed
 
     private void buttonUsunLista1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonUsunLista1ActionPerformed
+
         int[] whichToDelete = widokLista.getSelectedIndices();
+        int[] whichToDelete = widokLista.set
         System.out.println(whichToDelete.length);
         for (int i = whichToDelete.length - 1; i >= 0; i--) {
             modelLista.removeElementAt(whichToDelete[i]);
